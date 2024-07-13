@@ -6,38 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>may first website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .about {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-container {
+            background-color: aliceblue;
+            border-radius: 20px;
+            width: 90%;
+            height: 100vh;
+            margin: 0 auto;
+
+        }
+
+        .section-header {
+            font-size: 35px;
+            text-align: center;
+            padding: 50px 0 0 0;
+            font-weight: bolder;
+
+        }
+
+        .section-header p {
+            color: rgb(14, 136, 230);
+            border: rgb(14, 136, 230) 1px solid;
+            border-radius: 8px;
+            display: inline;
+            padding: 10px;
+        }
+
+        .gallery {
+            height: 100%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .gallery .g-item {
+            height: 80%;
+            width: 45%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .gallery .g-item .album-1 {
+            width: 50%;
+        }
+
+        .gallery .g-item .album-2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .gallery .g-item img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            border-radius: 15px;
+
+        }
+    </style>
 </head>
 
-<body style="margin: 0;
-        padding: 0; 
-        box-sizing: border-box;">
+<body>
 
-    <main style=" height: 100vh; 
-            display: flex; 
-            flex-direction: row; 
-            align-items: center; 
-            justify-content: center;">
-
-        <div style="
-                    width: 1000px;
+    <main>
+        <div class="container about">
+            <div style="
+                    width: 90%;
                     height: 80%;
                     background: aliceblue; 
                     color: rgb(87, 96, 111); 
                     padding: 20px;
-                    margin: 0 auto 0 auto ; 
+                    margin: 0 auto ; 
                     display: flex;
                     gap: 20px;
                     flex-direction: row; 
                     align-items: center; 
                     border-radius: 20px;">
 
-            <div style="height: 95%;">
-                <img src="images/profile1.jpeg" alt="" style="
+                <div style="height: 95%;">
+                    <img src="images/profile1.jpeg" alt="" style="
                         border-radius: 20px; 
                         height: 100%;">
 
-            </div>
-            <div style=" 
+                </div>
+                <div style=" 
                     height: 85%;
                     background: rgb(233, 245, 255); 
                     padding: 10px;
@@ -46,30 +118,69 @@
                     overflow: hidden; 
                      box-shadow: rgba(0, 0, 0, 0.06) -1px 0px 4px 0px ;
                     ">
-                <h1 style="color: rgb(79, 166, 233);">Hello..!<span style="font-size: 35px; color: rgb(14, 136, 230)"> I
-                        am Golam Kibriya</span></h1>
+                    <h1 style="color: rgb(79, 166, 233);">Hello..!<span
+                            style="font-size: 35px; color: rgb(14, 136, 230)"> I
+                            am Golam Kibriya</span></h1>
 
-                <p style=" 
+                    <p style=" 
                         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
                         line-height: 1.5;
-                        font-size: 18px;
+                        font-size: 20px;
                         
                     ">I am from Kashimpur Gazipur. I am a student of Borak Polytechnic Institute. My department is
-                    computer
-                    technology. Currently i am studying full stack web development at <a
-                        href="https://www.shikhbeshobai.com/" target="_blank"
-                        style="text-decoration: none;color: rgb(79, 166, 233)">sikhbe sobai </a> as a part of an
-                    industrial attachment under the guidance of our mentor <a
-                        href="https://www.facebook.com/faridulrony/" target="_blank"
-                        style="text-decoration: none;color: rgb(79, 166, 233)">Farid rony </a> sir. He is highly skilled
-                    designer,developer and a top-rated plus freelancer .When we face any kind of issues to complete our
-                    project or assignment the support team of sikhbe sobai always keep ready to help us overcome this
-                    issues .  <br> <br> I'm passionate about leveraging technology to create meaningful solutions.I'm
-                    exited about the opportunities ahead my journey as a web developer
-                </p>
+                        computer
+                        technology. Currently i am studying full stack web development at <a
+                            href="https://www.shikhbeshobai.com/" target="_blank"
+                            style="text-decoration: none;color: rgb(79, 166, 233)">sikhbe sobai </a> as a part of an
+                        industrial attachment under the guidance of our mentor <a
+                            href="https://www.facebook.com/faridulrony/" target="_blank"
+                            style="text-decoration: none;color: rgb(79, 166, 233)">Farid rony </a> sir. He is highly
+                        skilled
+                        designer,developer and a top-rated plus freelancer .When we face any kind of issues to complete
+                        our
+                        project or assignment the support team of sikhbe sobai always keep ready to help us overcome
+                        this
+                        issues . <br> <br> I'm passionate about leveraging technology to create meaningful solutions.I'm
+                        exited about the opportunities ahead my journey as a web developer
+                    </p>
 
+                </div>
             </div>
         </div>
+
+        <section class="gallery-container ">
+
+            <div class="section-header ">
+                <p>Try it at your home </p>
+            </div>
+
+            <div class="gallery">
+
+                <div class="g-item ">
+                    <div class="album-1">
+                        <img src="/images/gellary/cookies.jpg" alt="">
+                    </div>
+                    <div class="album-2">
+                        <img src="/images/gellary/s1.jpg" alt="">
+                        <img src="/images/gellary/s3.jpg" alt="">
+                    </div>
+
+
+                </div>
+                <div class="g-item ">
+                    <div class="album-2">
+                        <img src="/images/gellary/s2.jpg" alt="">
+                        <img src="/images/gellary/s4.jpg" alt="">
+                    </div>
+                    <div class="album-1">
+                        <img src="/images/gellary/kitchen-counter.jpg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
     </main>
 </body>
 
