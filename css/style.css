@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    max-width: 1400px;
+    width: 100%;
+}
+
+
+
+nav {
+    padding: 10px 0;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.menu {
+    width: 50%;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 150px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu ul a {
+    text-decoration: none;
+}
+
+.menu ul a li {
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(14, 136, 230);
+    padding: 9px 15px;
+    color: #fff;
+    border-radius: 5px;
+    transition: .5s all;
+    border: 1px solid rgb(255, 255, 255);
+
+
+}
+
+.menu ul a li:hover {
+    color: rgb(14, 136, 230);
+    background: #fff;
+    border: 1px solid #0e88e6;
+
+}
+
+.hero-banner {
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0e88e6dc;
+
+
+}
+
+.hero-banner .banner-items {
+    width: 80%;
+    padding: 50px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.hero-banner .banner-items .banner-content .small-title {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.hero-banner .banner-items .banner-content h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 5px 0;
+    margin: 25px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.hero-banner .banner-items .banner-content p {
+    font-size: 20px;
+}
+
+.hero-banner .banner-items .btn {
+    padding: 20px 70px;
+    border: 1px solid rgb(14, 136, 230);
+    border-radius: 5px;
+    margin: 50px 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgb(14, 136, 230);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.hero-banner .banner-items .btn:hover {
+    color: #f0f8ff;
+    background: rgba(14, 136, 230, 0.678);
+    border-color: rgb(255, 255, 255);
+
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-container {
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+.section-header {
+    font-size: 35px;
+    text-align: center;
+    padding: 50px 0 0 0;
+    font-weight: bolder;
+
+}
+
+.section-header p {
+    color: rgb(14, 136, 230);
+    border: rgb(14, 136, 230) 1px solid;
+    border-radius: 8px;
+    display: inline;
+    padding: 10px;
+}
+
+.gallery {
+    height: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.gallery .g-item {
+    height: 80%;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery .g-item .album-1 {
+    width: 50%;
+}
+
+.gallery .g-item .album-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery .g-item .album-item,
+.gallery .g-item .album-item img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+
+}
+
+.gallery .g-item .album-item img {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.gallery .g-item .album-item {
+    position: relative;
+}
+
+.gallery .g-item .album-item .album-btn {
+    position: absolute;
+    top: 42%;
+    left: 30%;
+    padding: 10px 20px;
+    color: rgb(14, 136, 230);
+    border: rgb(14, 136, 230) solid 1px;
+    background-color: rgba(240, 248, 255, 0.354);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 7px;
+
+}
+
+.gallery .g-item .album-item .album-btn:hover {
+    background: rgb(14, 136, 230);
+    color: aliceblue;
+    transition: .5s all;
+}

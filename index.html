@@ -5,118 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
     <title>may first website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        .about {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .gallery-container {
-            background-color: aliceblue;
-            border-radius: 20px;
-            width: 90%;
-            height: 100vh;
-            margin: 0 auto;
-
-        }
-
-        .section-header {
-            font-size: 35px;
-            text-align: center;
-            padding: 50px 0 0 0;
-            font-weight: bolder;
-
-        }
-
-        .section-header p {
-            color: rgb(14, 136, 230);
-            border: rgb(14, 136, 230) 1px solid;
-            border-radius: 8px;
-            display: inline;
-            padding: 10px;
-        }
-
-        .gallery {
-            height: 100%;
-            height: 90%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-
-        }
-
-        .gallery .g-item {
-            height: 80%;
-            width: 45%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .gallery .g-item .album-1 {
-            width: 50%;
-        }
-
-        .gallery .g-item .album-2 {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .gallery .g-item .album-item,
-        .gallery .g-item .album-item img {
-            max-width: 100%;
-            width: 100%;
-            height: 100%;
-
-        }
-
-        .gallery .g-item .album-item img {
-            padding: 10px;
-            border-radius: 15px;
-        }
-
-        .gallery .g-item .album-item {
-            position: relative;
-        }
-
-        .gallery .g-item .album-item .album-btn {
-            position: absolute;
-            top: 42%;
-            left: 30%;
-            padding: 10px 20px;
-            color: rgb(14, 136, 230);
-            border: rgb(14, 136, 230) solid 1px;
-            background-color: rgba(240, 248, 255, 0.354);
-            font-size: 18px;
-            font-weight: 500;
-            cursor: pointer;
-            border-radius: 7px;
-
-        }
-
-        .gallery .g-item .album-item .album-btn:hover {
-            background: rgb(14, 136, 230);
-            color: aliceblue;
-            transition: .5s all;
-        }
-    </style>
 </head>
 
 <body>
 
+    <nav>
+        <div class="logo"> <a href="./"> <img src="images/logo/logo.png" alt="">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="#">
+                    <li>home</li>
+                </a>
+                <a href="#">
+                    <li>about</li>
+                </a>
+                <a href="#">
+                    <li>portfolio</li>
+                </a>
+                <a href="">
+                    <li>contact</li>
+                </a>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="hero-banner">
+        <div class="banner-items">
+            <div class="banner-content">
+                <p class="small-title">first and aco friendly</p>
+                <h2>best services offered here</h2>
+                <p>introducing our latest service offering get quickly and efficiently with our range of solutions. <br>
+                    designed to meet you needs using the latest technologies</p>
+            </div>
+            <button class="btn hero-banner-btn">Click me </button>
+        </div>
+    </div>
     <main>
         <div class="container about">
             <div style="
